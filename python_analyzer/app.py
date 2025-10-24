@@ -8,7 +8,7 @@ CORS(app)
 OFFENSIVE = {
     'insulto': 1,
     'idiota': 2,
-    'estúpido': 3,
+    'estupido': 3,
     'matar': 3,
     'golpear': 2
 }
@@ -26,7 +26,7 @@ def analyze_text(text):
     # severity simple
     if score <= 2:
         sev = 'baja'
-    elif score <= 4:
+    elif score <= 3:
         sev = 'media'
     else:
         sev = 'alta'

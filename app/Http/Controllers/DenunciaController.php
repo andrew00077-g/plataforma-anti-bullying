@@ -14,7 +14,7 @@ class DenunciaController extends Controller
     // Listado simple de denuncias (solo admin prototipo)
     public function lista(){
         $denuncias = Denuncia::orderBy('created_at','desc')->get();
-        return view('denuncias_lista', compact('denuncias'));
+        return view('admin.denuncias_lista', compact('denuncias'));
     }
 
     public function store(Request $request){
